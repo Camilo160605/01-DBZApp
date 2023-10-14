@@ -9,7 +9,17 @@ import { DbzService } from '../services/Dbz.service';
 
 export class MainPageComponent {
     constructor(
-        public dbzservice : DbzService
+        private dbzservice : DbzService
     ){}
+
+    get characters() : Character[]{
+        return [... this.dbzservice.characters]
+    }
+    onDeleteCharacter(id: string ): void{
+        this.dbzservice.deleteCharacterById(id)
+    }
+    onNewCharacter(character: Character): void{
+        this.dbzservice.addCharacter(character)
+    }
 
 }

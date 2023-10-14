@@ -8,8 +8,13 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
   @Input() public characterList: Character[] = []
-  @Output()indexCharacter : EventEmitter<number>= new EventEmitter;
-  onDeleteCharacter(index : number ){
-    this.indexCharacter.emit(index);
+
+  @Output()indexCharacter : EventEmitter<string>= new EventEmitter;
+
+  onDeleteCharacter(id? : string){
+    if(!id){return}
+    console.log({id});
+
+    this.indexCharacter.emit(id);
   }
 }
