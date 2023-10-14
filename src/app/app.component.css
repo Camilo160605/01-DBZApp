@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+h1 {
+    font-size: 56px; /* Tamaño de fuente */
+    font-weight: bold; /* Grosor de fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Margen inferior para separación */
+  }
+  
+  /* Estilo de fondo y borde */
+  .title-container {
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 2px solid #ddd; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interior */
+  }
+  
+  /* Estilo de sombra para dar profundidad */
+  .title-container {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Cambiar el color del título */
+  h1 {
+    color: #007bff; /* Azul */
+  }
+  
+  /* Cambiar la fuente */
+  h1 {
+    font-family: 'Arial', sans-serif; /* Fuente personalizada */
+  }
+  
+  /* Estilo de texto en mayúsculas */
+  h1 {
+    text-transform: uppercase; /* Convertir a mayúsculas */
+  }
+  
+  /* Estilo de fuente personalizada con Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+  
+  h1 {
+    font-family: 'Pixelify Sans', sans-serif; /* Usar la fuente Roboto de Google Fonts */
+  }
+  #container-menu__button {
+    background-color: #007bff; /* Color de fondo */
+    position: fixed;
+    right: 0;
+    top: 35px;
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición de colores */
+  }
+  
+  #container-menu__button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+  }
