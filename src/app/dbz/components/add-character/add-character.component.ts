@@ -1,4 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import {  } from "uuid";
+
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
